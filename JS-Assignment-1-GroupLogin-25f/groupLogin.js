@@ -24,11 +24,12 @@ if (teamInput === teamNumber) {
     alert("Access denied!");
   } else {
     firstName = firstName.trim(); // Trim whitespace
-    firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase(); // first letter uppercase, rest lowercase
+    firstName =
+      firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase(); // first letter uppercase, rest lowercase
 
     // Check if first name exists in team members
     if (teamMembers[firstName]) {
-      alert("Hello " + firstName + "! Welcome " + teamMembers[firstName]);
+      alert("Hello " + teamMembers[firstName] + "! Welcome to the team.");
     } else {
       alert("Access denied!");
     }
