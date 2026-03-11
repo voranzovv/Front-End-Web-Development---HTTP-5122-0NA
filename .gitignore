@@ -1,0 +1,4 @@
+*.pkg
+*.dmg
+*.zip
+node_modules
